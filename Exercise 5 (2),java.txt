@@ -1,0 +1,61 @@
+//Test App
+package javaapplication4;
+import pack1.MathOperations;
+import pack2.StringOperations;
+import pack3.Calculator;
+public class TestApp {
+    public static void main(String[] args) {
+        MathOperations math = new MathOperations();
+        StringOperations stringOps = new StringOperations();
+        Calculator calculator = new Calculator();
+        int result1 = math.add(10, 5);
+        int result2 = math.subtract(10, 5);
+        String result3 = stringOps.concatenate("Hello, ", "world!");
+        String result4 = stringOps.reverse("Java");
+        int result5 = calculator.multiply(6, 7);
+        String result6 = calculator.divide(10, 0);
+        System.out.println("Result of addition: " + result1);
+        System.out.println("Result of subtraction: " + result2);
+        System.out.println("Concatenated string: " + result3);
+        System.out.println("Reversed string: " + result4);
+        System.out.println("Result of multiplication: " + result5);
+        System.out.println("Result of division: " + result6);
+    }
+}
+//Pack 1
+package pack1;
+public class MathOperations {
+    public int add(int a, int b) {
+        return a + b;
+    }
+    public int subtract(int a, int b) {
+        return a - b;
+    }
+}
+//Pack 2
+package pack2;
+public class StringOperations {
+    public String concatenate(String str1, String str2) {
+        return str1 + str2;
+    }
+    public String reverse(String str) {
+        StringBuilder reversed = new StringBuilder();
+        for (int i = str.length() - 1; i >= 0; i--) {
+            reversed.append(str.charAt(i));
+        }
+        return reversed.toString();
+    }
+}
+//Pack 3
+package pack3;
+public class Calculator {
+    public int multiply(int a, int b) {
+        return a * b;
+    }
+    public String divide(int a, int b) {
+        if (b == 0) {
+            return "Cannot divide by zero!";
+        }
+        return String.valueOf((double) a / b);
+    }
+}
