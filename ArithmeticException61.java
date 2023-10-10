@@ -4,10 +4,6 @@
  */
 package javaex6;
 import java.util.*;
-/**
- *
- * 
- */
 public class ArithmeticException61
 {
 public static void main(String[] args) 
