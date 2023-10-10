@@ -1,9 +1,5 @@
 package javaex6;
 import java.util.*;
-/**
- *
- * 
- */
 public class StringIndexOutOfBoundException61 
 {
     public static void main(String[] args) 
