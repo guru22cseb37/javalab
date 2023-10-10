@@ -4,10 +4,6 @@
  */
 package javaex6;
 import java.util.*;
-/**
- *
- * @author VISHWA
- */
 public class NumberFormatException61  
 {
 public static void main(String[] args) 
