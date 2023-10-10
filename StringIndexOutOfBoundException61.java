@@ -2,7 +2,7 @@ package javaex6;
 import java.util.*;
 /**
  *
- * @author VISHWA
+ * 
  */
 public class StringIndexOutOfBoundException61 
 {
