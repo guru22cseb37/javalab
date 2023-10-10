@@ -6,7 +6,7 @@ package javaex6;
 import java.util.*;
 /**
  *
- * @author VISHWA
+ * 
  */
 public class ArithmeticException61
 {
